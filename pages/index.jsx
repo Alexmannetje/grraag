@@ -1,11 +1,12 @@
 import Head from "next/head";
 
+/* Import components */
+import Nav from "../components/nav";
+
 export default function Home() {
   return (
     <div>
-      <Head>
-        <link rel="shortcut icon" href="bo.jpg" type="image/jpg" />
-      </Head>
+      <Nav />
       <p className="text-red-500">hi bo frans</p>
     </div>
   );
