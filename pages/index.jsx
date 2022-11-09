@@ -1,12 +1,15 @@
-/* Import components */
 import Head from "next/head";
 import Nav from "../components/nav";
+import Nav2 from "../components/nav2";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-700">
+      <Head>
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+      </Head>
+      <Nav2 />
       <Nav />
-      <p className="text-red-500">hi bo frans</p>
     </div>
   );
 }
