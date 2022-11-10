@@ -3,8 +3,8 @@ import React from "react";
 export default function Nav2() {
   return (
     <aside class="p-5 w-52" aria-label="Sidebar">
-      <div class="py-4 px-3 ">
-        <ul class="space-y-2 divide-y divide-solid divide-stone-600">
+      <div class="flex py-4 px-3 ">
+        <ul class="mt-2 mx-5 space-y-2 divide-y divide-solid divide-stone-600">
           <li>
             <a
               href="/"
@@ -20,6 +20,9 @@ export default function Nav2() {
               <span class="ml-3">Home</span>
             </a>
           </li>
+          <li></li>
+        </ul>
+        <ul class="space-y-2 divide-y divide-solid divide-stone-600">
           <li class="pt-2">
             <a
               href="/"
