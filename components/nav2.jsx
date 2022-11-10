@@ -25,7 +25,7 @@ export default function Nav2() {
         <ul class="space-y-2 divide-y divide-solid divide-stone-600">
           <li class="pt-2">
             <a
-              href="/"
+              href="/contact"
               class="flex p-2 rounded-lg text-white hover:bg-gray-800"
             >
               <svg
