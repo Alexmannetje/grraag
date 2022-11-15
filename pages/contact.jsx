@@ -10,7 +10,7 @@ export default function Contact() {
         <section className="mb-32 text-gray-700">
           <div className="relative overflow-hidden bg-no-repeat bg-cover"></div>
           <div className="container text-gray-800 px-4 md:px-12">
-            <div className="block rounded-lg shadow-lg py-10 px-2 bg-gray-600">
+            <div className="block rounded-lg shadow-lg py-10  bg-gray-600">
               <div className="flex flex-wrap ml-24">
                 <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                   <form>
@@ -103,17 +103,17 @@ export default function Contact() {
                   </form>
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
-                  <div className="flex flex-wrap justify-center mt-10">
+                  <div className="flex flex-wrap justify-center mt-24">
                     <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                       <div className="flex">
                         <div className="flex justify-center shrink-0">
-                          <div className="mt-5 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                          <div className="mt-1 bg-blue-600 rounded-md shadow-md w-24 h-24 flex items-center justify-center">
                             <svg
                               aria-hidden="true"
                               focusable="false"
                               data-prefix="fas"
                               data-icon="headset"
-                              className="w-6 text-white"
+                              className="w-12 text-white"
                               role="img"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 512 512"
@@ -125,7 +125,7 @@ export default function Contact() {
                             </svg>
                           </div>
                         </div>
-                        <div className="pl-5 grow ">
+                        <div className="pl-5 grow">
                           <p className="font-bold mb-1 text-gray-300">
                             Direct support
                           </p>
