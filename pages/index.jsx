@@ -2,7 +2,6 @@ import Head from "next/head";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
-import Nav2 from "../components/nav2";
 
 export default function Home() {
   return (

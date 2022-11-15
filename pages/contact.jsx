@@ -1,24 +1,23 @@
 import React from "react";
 import Nav from "../components/nav";
-import Nav2 from "../components/nav2";
 import Footer from "../components/footer";
 
 export default function Contact() {
   return (
     <div className="h-screen bg-gray-700">
       <Nav />
-      <div class="container my-24 px-6 mx-auto">
-        <section class="mb-32 text-gray-700">
-          <div class="relative overflow-hidden bg-no-repeat bg-cover"></div>
-          <div class="container text-gray-800 px-4 md:px-12">
-            <div class="block rounded-lg shadow-lg py-10 px-2 bg-gray-600">
-              <div class="flex flex-wrap ml-24">
-                <div class="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
+      <div className="container my-24 px-6 mx-auto">
+        <section className="mb-32 text-gray-700">
+          <div className="relative overflow-hidden bg-no-repeat bg-cover"></div>
+          <div className="container text-gray-800 px-4 md:px-12">
+            <div className="block rounded-lg shadow-lg py-10 px-2 bg-gray-600">
+              <div className="flex flex-wrap ml-24">
+                <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                   <form>
-                    <div class="form-group mb-6">
+                    <div className="form-group mb-6">
                       <input
                         type="text"
-                        class="form-control block
+                        className="form-control block
                 w-full
                 px-3
                 py-1.5
@@ -36,10 +35,10 @@ export default function Contact() {
                         placeholder="Name"
                       />
                     </div>
-                    <div class="form-group mb-6">
+                    <div className="form-group mb-6">
                       <input
                         type="email"
-                        class="form-control block
+                        className="form-control block
                 w-full
                 px-3
                 py-1.5
@@ -57,9 +56,9 @@ export default function Contact() {
                         placeholder="Email address"
                       />
                     </div>
-                    <div class="form-group mb-6">
+                    <div className="form-group mb-6">
                       <textarea
-                        class="
+                        className="
                 form-control
                 block
                 w-full
@@ -81,15 +80,15 @@ export default function Contact() {
                         placeholder="Message"
                       ></textarea>
                     </div>
-                    <div class="form-group form-check text-center mb-6">
+                    <div className="form-group form-check text-center mb-6">
                       <input
                         type="checkbox"
-                        class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                        className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
                         id="exampleCheck87"
-                        checked
+                        defaultChecked
                       />
                       <label
-                        class="form-check-label inline-block text-gray-300"
+                        className="form-check-label inline-block text-gray-300"
                         for="exampleCheck87"
                       >
                         Send me a copy of this message
@@ -97,24 +96,24 @@ export default function Contact() {
                     </div>
                     <button
                       type="submit"
-                      class="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 ease-in-out"
+                      className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 ease-in-out"
                     >
                       Send
                     </button>
                   </form>
                 </div>
-                <div class="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
-                  <div class="flex flex-wrap justify-center mt-10">
-                    <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
-                      <div class="flex  items-start">
-                        <div class="shrink-0">
-                          <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
+                  <div className="flex flex-wrap justify-center mt-10">
+                    <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+                      <div className="">
+                        <div className="flex justify-center shrink-0">
+                          <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                             <svg
                               aria-hidden="true"
                               focusable="false"
                               data-prefix="fas"
                               data-icon="headset"
-                              class="w-5 text-white"
+                              className="w-6 text-white"
                               role="img"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 512 512"
@@ -126,12 +125,13 @@ export default function Contact() {
                             </svg>
                           </div>
                         </div>
-                        <div class="grow ml-6">
-                          <p class="font-bold mb-1 text-gray-300">
-                            Technical support
+                        <div className="pl-5 grow ml-6">
+                          <p className="ml-6 font-bold mb-1 text-gray-300">
+                            Direct support
                           </p>
-                          <p class="text-gray-300">support@example.com</p>
-                          <p class="text-gray-300">+1 234-567-89</p>
+                          <p className="text-gray-300">e-mail</p>
+                          <p className="text-gray-300">nummer</p>
+                          <p className="text-gray-300">address</p>
                         </div>
                       </div>
                     </div>
