@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Cards from "../components/cards";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Nav />
       <Carousel />
+      <Cards />
       <Footer />
     </div>
   );
