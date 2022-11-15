@@ -3,7 +3,7 @@ import React from "react";
 export default function Nav() {
   return (
     <nav class="bg-gray-700 py-2.5 mb-4 shadow-lg">
-      <div class="container flex flex-wrap justify-around items-center mx-40">
+      <div class="container flex flex-wrap justify-around items-center mx-48">
         <a href="/" class="flex items-center mr-80">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
@@ -22,6 +22,14 @@ export default function Nav() {
                 class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Services
               </a>
             </li>
             <li>
