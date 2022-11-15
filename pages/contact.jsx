@@ -84,7 +84,7 @@ export default function Contact() {
                       <input
                         type="checkbox"
                         className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                        id="exampleCheck87"
+                        id="copycheck"
                         defaultChecked
                       />
                       <label
@@ -105,9 +105,9 @@ export default function Contact() {
                 <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
                   <div className="flex flex-wrap justify-center mt-10">
                     <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
-                      <div className="">
+                      <div className="flex">
                         <div className="flex justify-center shrink-0">
-                          <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                          <div className="mt-5 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                             <svg
                               aria-hidden="true"
                               focusable="false"
@@ -125,8 +125,8 @@ export default function Contact() {
                             </svg>
                           </div>
                         </div>
-                        <div className="pl-5 grow ml-6">
-                          <p className="ml-6 font-bold mb-1 text-gray-300">
+                        <div className="pl-5 grow ">
+                          <p className="font-bold mb-1 text-gray-300">
                             Direct support
                           </p>
                           <p className="text-gray-300">e-mail</p>
