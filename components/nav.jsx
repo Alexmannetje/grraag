@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Nav() {
   return (
-    <nav className="bg-gray-800 py-2.5 mb-4 shadow-lg">
+    <nav className="bg-gray-800 py-2.5 shadow-xl">
       <div className="flex flex-wrap justify-around items-center">
         <div className="w-24"></div>
         <a href="/" className="flex items-end">
