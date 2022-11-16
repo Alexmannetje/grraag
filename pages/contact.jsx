@@ -4,9 +4,9 @@ import Footer from "../components/footer";
 
 export default function Contact() {
   return (
-    <div className="h-screen bg-gray-700">
+    <div className="h-auto bg-gray-700">
       <Nav />
-      <div className="container my-24 px-6 mx-auto">
+      <div className="container my-32 px-6 mx-auto">
         <section className="mb-32 text-gray-700">
           <div className="relative overflow-hidden bg-no-repeat bg-cover"></div>
           <div className="container text-gray-800 px-4 md:px-12">
