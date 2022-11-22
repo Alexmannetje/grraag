@@ -22,9 +22,9 @@ export default function Cards() {
             </svg>
           </div>
 
-          <h3 className="text-lg font-bold mb-2">1. Product</h3>
+          <h3 className="text-lg font-bold mb-2">Voorgevelrenovering</h3>
 
-          <p className="text-sm leading-6 text-gray-600">dingen</p>
+          <p className="text-sm leading-6 text-gray-600">...</p>
         </div>
 
         <div className="p-6 bg-gray-100 rounded-lg">

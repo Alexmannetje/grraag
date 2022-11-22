@@ -13,8 +13,9 @@ export default function Home() {
       </Head>
       <Nav />
       <Cta />
-      <Carousel />
       <Cards />
+      <Carousel />
+
       <Footer />
     </div>
   );
