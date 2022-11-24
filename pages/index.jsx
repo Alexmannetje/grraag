@@ -12,9 +12,10 @@ export default function Home() {
         <link rel="icon" type="image/ico" href="favicon.ico" />
       </Head>
       <Nav />
-      <Cta />
-      <Carousel />
       <Cards />
+      <Carousel />
+      
+      <Cta />
       <Footer />
     </div>
   );
