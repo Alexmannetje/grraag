@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 export default function Contact() {
   const subject = useRef();
   const body = useRef();
+  const email = useRef();
 
   return (
     <div className="h-auto bg-gray-700">
@@ -21,7 +22,7 @@ export default function Contact() {
                       <input
                         type="text"
                         ref={subject}
-                        className="form-control placeholder:text-gray-300 text-gray-400 bg-gray-600 block w-full px-3 py-1.5 text-base font-normal bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
+                        className="form-control placeholder:text-gray-300 text-gray-300 bg-gray-600 block w-full px-3 py-1.5 text-base font-normal bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleInput7"
                         placeholder="Onderwerp"
                       />
@@ -29,20 +30,8 @@ export default function Contact() {
                     <div className="form-group mb-6">
                       <input
                         type="email"
-                        className="form-control block
-                      px-3
-                      w-full
-                py-1.5
-                text-base
-                font-normal
-                text-gray-400
-                bg-gray-600 bg-clip-padding
-                border border-solid border-gray-500
-                rounded
-                transition
-                placeholder:text-gray-300
-                ease-in-out
-                focus:text-gray-300 focus:border-blue-600 focus:outline-none"
+                        ref={email}
+                        className="form-control block px-3 w-full py-1.5 text-base font-normal text-gray-400 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition placeholder:text-gray-300 ease-in-out focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleInput8"
                         placeholder="Email address"
                       />
@@ -50,34 +39,17 @@ export default function Contact() {
                     <div className="form-group mb-6">
                       <textarea
                         ref={body}
-                        className="
-                form-control
-                block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-400
-                placeholder:text-gray-300
-                bg-gray-600 bg-clip-padding
-                border border-solid border-gray-500
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-300 focus:border-blue-600 focus:outline-none
-              "
+                        className=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 placeholder:text-gray-300 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleFormControlTextarea13"
                         rows="3"
-                        placeholder="Message"
+                        placeholder="Inhoud"
                       ></textarea>
                     </div>
 
                     <a
-                      href={`mailto:questions@grraag.be?subject=${
-                        subject?.current?.value || "null"
-                      }&body=${body?.current?.value || "null"}`}
+                      href={`mailto:questions@grraag.be?subject=${subject?.current?.value || subject}
+                      &body=${body?.current?.value || "null"}`
+                      }
                       className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 ease-in-out"
                     >
                       Verstuur
