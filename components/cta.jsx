@@ -21,7 +21,7 @@ export default function Cta() {
                 href="#"
                 class="inline-flex items-center rounded-full bg-indigo-700 px-8 py-3 text-white shadow-lg transition hover:bg-indigo-600 focus:outline-none focus:ring"
               >
-                <span class="text-sm font-medium"> Order Now </span>
+                <span class="text-sm font-medium">Contacteer ons</span>
 
                 <svg
                   class="ml-3 h-5 w-5"

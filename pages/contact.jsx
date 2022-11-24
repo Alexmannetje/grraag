@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 
 export default function Contact() {
+  const subject = useRef();
+  const body = useRef();
+  const email = useRef();
+
   return (
     <div className="h-screen bg-gray-700">
       <Nav />
@@ -10,96 +14,46 @@ export default function Contact() {
         <section className="mb-32 text-gray-700">
           <div className="relative overflow-hidden bg-no-repeat bg-cover"></div>
           <div className="container text-gray-800 px-4 md:px-12">
-            <div className="block rounded-lg shadow-lg py-10  bg-gray-600">
+            <div className="block rounded-lg py-10">
               <div className="flex flex-wrap ml-24">
                 <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                   <form>
                     <div className="form-group mb-6">
                       <input
                         type="text"
-                        className="form-control block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        ref={subject}
+                        className="form-control placeholder:text-gray-300 text-gray-300 bg-gray-600 block w-full px-3 py-1.5 text-base font-normal bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleInput7"
-                        placeholder="Name"
+                        placeholder="Onderwerp"
                       />
                     </div>
                     <div className="form-group mb-6">
                       <input
                         type="email"
-                        className="form-control block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        ref={email}
+                        className="form-control block px-3 w-full py-1.5 text-base font-normal text-gray-400 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition placeholder:text-gray-300 ease-in-out focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleInput8"
                         placeholder="Email address"
                       />
                     </div>
                     <div className="form-group mb-6">
                       <textarea
-                        className="
-                form-control
-                block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-              "
+                        ref={body}
+                        className=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 placeholder:text-gray-300 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
                         id="exampleFormControlTextarea13"
                         rows="3"
-                        placeholder="Message"
+                        placeholder="Inhoud"
                       ></textarea>
                     </div>
-                    <div className="form-group form-check text-center mb-6">
-                      <input
-                        type="checkbox"
-                        className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                        id="copycheck"
-                        defaultChecked
-                      />
-                      <label
-                        className="form-check-label inline-block text-gray-300"
-                        for="exampleCheck87"
-                      >
-                        Send me a copy of this message
-                      </label>
-                    </div>
-                    <button
-                      type="submit"
+
+                    <a
+                      href={`mailto:questions@grraag.be?subject=${subject?.current?.value || subject}
+                      &body=${body?.current?.value || "null"}`
+                      }
                       className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 ease-in-out"
                     >
-                      Send
-                    </button>
+                      Verstuur
+                    </a>
                   </form>
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">

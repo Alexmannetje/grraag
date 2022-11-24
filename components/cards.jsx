@@ -4,7 +4,7 @@ export default function Cards() {
   return (
     <div className="container mx-auto ">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 pt-10 pb-10 lg:pt-20 lg:pb-20">
-        <div className="p-6 bg-gray-100 rounded-lg">
+        <div className="p-6 bg-gray-600 rounded-lg shadow">
           <div className="mb-5">
             <svg
               className="hi-outline hi-template inline-block w-12 h-12 text-indigo-500"
@@ -22,12 +22,14 @@ export default function Cards() {
             </svg>
           </div>
 
-          <h3 className="text-lg font-bold mb-2">1. Product</h3>
+          <h3 className="text-lg font-bold mb-2 text-white">
+            Voorgevelrenovering
+          </h3>
 
-          <p className="text-sm leading-6 text-gray-600">dingen</p>
+          <p className="text-sm leading-6 text-gray-300">...</p>
         </div>
 
-        <div className="p-6 bg-gray-100 rounded-lg">
+        <div className="p-6 bg-gray-600 rounded-lg shadow">
           <div className="mb-5">
             <svg
               className="hi-outline hi-cube inline-block w-12 h-12 text-indigo-500"
@@ -45,12 +47,12 @@ export default function Cards() {
             </svg>
           </div>
 
-          <h3 className="text-lg font-bold mb-2">2. Features</h3>
+          <h3 className="text-lg font-bold mb-2 text-white">Restauraties</h3>
 
-          <p className="text-sm leading-6 text-gray-600">iets</p>
+          <p className="text-sm leading-6 text-gray-300">iets</p>
         </div>
 
-        <div className="p-6 bg-gray-100 rounded-lg">
+        <div className="p-6 bg-gray-600 rounded-lg shadow">
           <div className="mb-5">
             <svg
               className="hi-outline hi-cog inline-block w-12 h-12 text-indigo-500"
@@ -74,12 +76,12 @@ export default function Cards() {
             </svg>
           </div>
 
-          <h3 className="text-lg font-bold mb-2">3. Card</h3>
+          <h3 className="text-lg font-bold mb-2 text-white">Onderhoud</h3>
 
-          <p className="text-sm leading-6 text-gray-600">hi</p>
+          <p className="text-sm leading-6 text-gray-300">hi</p>
         </div>
 
-        <div className="p-6 bg-gray-100 rounded-lg">
+        <div className="p-6 bg-gray-600 rounded-lg shadow">
           <div className="mb-5">
             <svg
               className="hi-outline hi-sparkles inline-block w-12 h-12 text-indigo-500"
@@ -97,9 +99,9 @@ export default function Cards() {
             </svg>
           </div>
 
-          <h3 className="text-lg font-bold mb-2">4. Design</h3>
+          <h3 className="text-lg font-bold mb-2 text-white">Andere</h3>
 
-          <p className="text-sm leading-6 text-gray-600">hi</p>
+          <p className="text-sm leading-6 text-gray-300">hi</p>
         </div>
       </div>
     </div>
