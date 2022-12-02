@@ -6,17 +6,13 @@ export default function Nav() {
     <>
       <Head>
         <title>Grraag</title>
-        {/* <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> */}
+        <link rel="shortcut icon" href="Grraag_logo.png" type="image/png" />
       </Head>
       <nav className="bg-gray-800 py-2.5 shadow-xl">
         <div className="flex flex-wrap items-center justify-between max-w-screen-lg mx-auto">
           <a href="/" className="flex">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-3 h-6 sm:h-9"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-gray-300">
+            <img src="Grraag_logo.png" width={50} />
+            <span className="ml-4 self-center text-xl font-semibold whitespace-nowrap text-gray-300">
               Grraag
             </span>
           </a>
