@@ -7,18 +7,16 @@ export default function Cta() {
         <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
           <div class="max-w-lg text-center sm:text-left">
             <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo!
+              Info over GrraaG
             </h2>
 
             <p class="hidden max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore officia corporis quasi doloribus iure architecto quae
-              voluptatum beatae excepturi dolores.
+              ...
             </p>
 
             <div class="mt-4 sm:mt-8">
               <a
-                href="#"
+                href="/contact"
                 class="inline-flex items-center rounded-full bg-indigo-700 px-8 py-3 text-white shadow-lg transition hover:bg-indigo-600 focus:outline-none focus:ring"
               >
                 <span class="text-sm font-medium">Contacteer ons</span>

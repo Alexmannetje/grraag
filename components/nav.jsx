@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <>
       <Head>
-        <title>Grraag</title>
+        <title>GrraaG</title>
         <link rel="shortcut icon" href="Grraag_logo.png" type="image/png" />
       </Head>
       <nav className="bg-gray-800 py-2.5 shadow-xl">
@@ -13,7 +13,7 @@ export default function Nav() {
           <a href="/" className="flex">
             <img src="Grraag_logo.png" width={50} />
             <span className="ml-4 self-center text-xl font-semibold whitespace-nowrap text-gray-300">
-              Grraag
+              GrraaG
             </span>
           </a>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">

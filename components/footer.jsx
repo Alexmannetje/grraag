@@ -89,7 +89,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-8 text-base leading-6 text-center text-gray-400">
-          © 2022 Grraag
+          Grraag
         </p>
       </div>
     </section>

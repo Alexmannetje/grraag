@@ -23,7 +23,7 @@ export default function Contact() {
                         type="text"
                         ref={subject}
                         className="form-control placeholder:text-gray-300 text-gray-300 bg-gray-600 block w-full px-3 py-1.5 text-base font-normal bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
-                        id="exampleInput7"
+                        id="MailOnderwerp"
                         placeholder="Onderwerp"
                       />
                     </div>
@@ -32,22 +32,21 @@ export default function Contact() {
                         type="email"
                         ref={email}
                         className="form-control block px-3 w-full py-1.5 text-base font-normal text-gray-400 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition placeholder:text-gray-300 ease-in-out focus:text-gray-300 focus:border-blue-600 focus:outline-none"
-                        id="exampleInput8"
-                        placeholder="Email address"
+                        id="MailAdress"
+                        placeholder="Email addres"
                       />
                     </div>
                     <div className="form-group mb-6">
                       <textarea
                         ref={body}
                         className=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 placeholder:text-gray-300 bg-gray-600 bg-clip-padding border border-solid border-gray-500 rounded transition ease-in-out m-0 focus:text-gray-300 focus:border-blue-600 focus:outline-none"
-                        id="exampleFormControlTextarea13"
+                        id="MailInhoud"
                         rows="3"
                         placeholder="Inhoud"
                       ></textarea>
                     </div>
-
                     <a
-                      href={`mailto:questions@grraag.be?subject=${subject?.current?.value || subject}
+                      href={`mailto:info@grraag.be?subject=${subject?.current?.value || subject}
                       &body=${body?.current?.value || "null"}`
                       }
                       className="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 ease-in-out"
@@ -81,11 +80,11 @@ export default function Contact() {
                         </div>
                         <div className="pl-5 grow">
                           <p className="font-bold mb-1 text-gray-300">
-                            Direct support
+                            Contact
                           </p>
-                          <p className="text-gray-300">e-mail</p>
-                          <p className="text-gray-300">nummer</p>
-                          <p className="text-gray-300">address</p>
+                          <p className="text-gray-300">e-mail: </p>
+                          <p className="text-gray-300">nummer: </p>
+                          <p className="text-gray-300">address: </p>
                         </div>
                       </div>
                     </div>
